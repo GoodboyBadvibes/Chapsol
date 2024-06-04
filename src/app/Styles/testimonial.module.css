@@ -1,0 +1,248 @@
+.header{
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 37.2px;
+}
+
+.subHeader{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.59px;
+}
+
+.content{
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.arrow{
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 2px solid #9747ff ;
+  color: #9747ff;
+  margin-right: 20px;
+}
+.quotes{
+  font-size: 110px;
+}
+.commentBox{
+  width: 498px;
+  /* height: 498px; */
+  border-radius: 50px;
+  color: white;
+  padding: 0px 30px 30px 30px;
+  flex: 0 0 auto;
+  scroll-snap-align: end;
+}
+.testScroll{
+  /* width: 1000px; */
+  overflow-x: auto;
+  gap: 25px;
+  /* margin-left: -50.0px !important; */
+  margin: auto;
+  flex-direction: row-reverse;
+  scroll-snap-type: x mandatory;
+}
+.testScroll::-webkit-scrollbar{
+  display: none;
+}
+.customer{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.39px;
+}
+.career{
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 11.83px;
+}
+
+@media screen and (max-width:895px){
+  .header{
+    font-size: 21px;
+  }
+  
+  .subHeader{
+    font-size: 26px;
+  }
+  
+  .content{
+    font-size: 15px;
+  }
+  .arrow{
+    font-size: 25px;
+  }
+  .quotes{
+    font-size: 100px;
+  }
+  .commentBox{
+    width: 398px;
+  }
+  .customer{
+    font-size: 14px;
+  }
+  .career{
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width:740px){
+  .header{
+    font-size: 11px;
+  }
+  
+  .subHeader{
+    font-size: 16px;
+    line-height: 22.59px;
+  }
+  
+  .content{
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .arrow{
+    font-size: 15px;
+  }
+  .quotes{
+    font-size: 90px;
+  }
+  .commentBox{
+    width: 298px;
+  }
+  .customer{
+    font-size: 10px;
+  }
+  .career{
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width:639px){
+   
+  .testScroll{
+    margin: auto !important;
+    padding: 0 50px;
+  }
+  .commentBox{
+    width: 398px;
+  }
+  .header{
+    font-size: 31px;
+  }
+  
+  .subHeader{
+    font-size: 36px;
+    line-height: 42.59px;
+  }
+  
+  .content{
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .arrow{
+    font-size: 35px;
+  }
+  .quotes{
+    font-size: 90px;
+  }
+  .customer{
+    font-size: 24px;
+  }
+  .career{
+    font-size: 10px;
+  }
+  .commentBox{
+    scroll-snap-align: center;
+  }
+}
+
+@media screen and (max-width:419px){
+  
+  .commentBox{
+    width: 318px;
+  }
+  .header{
+    font-size: 21px;
+  }
+  
+  .subHeader{
+    font-size: 26px;
+    line-height: 42.59px;
+  }
+  
+  .content{
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .arrow{
+    font-size: 25px;
+  }
+  .quotes{
+    font-size: 70px;
+  }
+  .customer{
+    font-size: 14px;
+  }
+  .career{
+    font-size: 5px;
+  }
+  .commentBox{
+    scroll-snap-align: center;
+  }
+}
+
+@media screen and (max-width:350px){
+  .testScroll{
+    gap:15px
+  }
+
+  .commentBox{
+    width: 298px;
+  }
+}
+
+@media screen and (max-width:319px){
+  
+  .testScroll{
+    margin: auto !important;
+    /* padding: 0 -50px; */
+  }
+  .commentBox{
+    width: 258px;
+  }
+  .header{
+    font-size: 11px;
+  }
+  
+  .subHeader{
+    font-size: 16px;
+    line-height: 42.59px;
+  }
+  
+  .content{
+    font-size: 7px;
+    line-height: 20px;
+  }
+  .arrow{
+    font-size: 15px;
+  }
+  .quotes{
+    font-size: 60px;
+  }
+  .customer{
+    font-size: 7px;
+  }
+  .career{
+    font-size: 5px;
+  }
+  .commentBox{
+    scroll-snap-align: center;
+  }
+}
+
+
+  

@@ -1,0 +1,222 @@
+.mess{
+  padding: 2.5% 5%;
+  border-radius: 5%;
+  margin: auto;
+}
+
+.header{
+  font-size: 32px;
+  font-weight: 700;
+  color: #505050;
+}
+
+.subheader{
+  font-size: 24px;
+  font-weight: 400;
+  color: #505050;
+}
+
+.form{
+  width: 480px;
+}
+
+.input{
+  font-size: 12;
+  font-weight: 500;
+  padding: 17px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  margin-bottom: 20px;
+  width: 100%;
+  border: none;
+}
+
+.input:hover{
+  border: none;
+  background-color: #f1eef7;
+}
+
+.input:focus{
+  border: none;
+  background-color: #e2d9f4;
+}
+
+.send{
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  color: white;
+}
+.policy{
+  font-size: 16px;
+  font-weight: 400;
+  color: #667085;
+  padding-left: 20px;
+}
+
+.icon{
+  font-size: 26.67px;
+  background-color: #CEB1FA;
+  color: #945ED1;
+  padding: 20px 25px;
+  border-radius: 100%;
+}
+.comm{
+  width: 50%;
+  padding-left: 10%;
+  padding-right: 5%;
+}
+.commCard{
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  width: 100%;
+  
+}
+.commHeader{
+  font-size: 24px;
+  font-weight: 700;
+  color: #505050;
+  margin-top: 20px;
+}
+.commContent{
+  font-size: 16px;
+  color: #505050;
+}
+
+
+
+@media screen and (max-width:1115px){
+  .comm{
+    width: 50%;
+    padding-left: 2.5%;
+    padding-right: 0%;
+  }
+}
+@media screen and (max-width:969px){
+  .mess{
+    padding: 2.5% 5%;
+    border-radius: 5%;
+    margin: unset;
+    /* width: 380px; */
+  }
+  .subheader{
+    margin: auto;
+    font-size: 14px;
+  }
+  .header{
+    margin: auto;
+    font-size: 22px;
+  }
+  .form{
+    width: 340px;
+    margin: auto;
+  }
+  .comm{
+    width: 50%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+ 
+}
+
+@media screen and (max-width:790px){
+  .commHeader{
+    font-size: 14px;
+  }
+  .commContent{
+    font-size: 6px;
+  }
+  .icon{
+    font-size: 16.67px;
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width:644px){
+  .commHeader{
+    font-size: 14px;
+  }
+  .commContent{
+    font-size: 6px;
+  }
+  .icon{
+    font-size: 16.67px;
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width:639px){
+  .mess{
+    padding: 2.5% 5%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .subheader{
+    margin: auto;
+    font-size: 14px;
+  }
+  .header{
+    margin: auto;
+    font-size: 22px;
+  }
+  .form{
+    width: 340px;
+    margin: auto;
+  }
+  .comm{
+    width: 70%;
+    margin: auto;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .commHeader{
+    font-size: 24px;
+  }
+  .commContent{
+    font-size: 16px;
+  }
+  .icon{
+    font-size: 26.67px;
+    padding: 20px 25px;
+  }
+  
+
+}
+
+@media screen and (max-width:400px){
+  .commHeader{
+    font-size: 14px;
+  }
+  .commContent{
+    font-size: 6px;
+  }
+  .icon{
+    font-size: 16.67px;
+    padding: 10px 15px;
+  }
+  .form{
+    width: 250px;
+  }
+  .mess{
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    /* margin: auto; */
+  }
+  .policy{
+    font-size: 8px;
+  }
+  .header{
+    margin: auto;
+    font-size: 19px;
+  }
+  .send{
+    /* padding: 5px; */
+    font-size: 8px;
+    font-weight: 500;
+  }
+}

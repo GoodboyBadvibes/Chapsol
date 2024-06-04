@@ -1,0 +1,129 @@
+.btn{
+  border-radius: 40px;
+  padding: 14px 24px 14px 24px;
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 34.31px;
+  /* width: 468px; */
+  /* width: 50%; */
+  margin-top: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.btndiv{
+  transition-property: all;
+  transition-duration: 5000ms;
+}
+.btnUnclick{
+  border: 1px solid #CEB1FA;
+  color: #CEB1FA;
+}
+.btnClick{
+  border: 2px solid #945ED1;
+  color: #945ED1;
+}
+
+.extBtn{
+   margin: 14px auto ;
+}
+
+.infoTech{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.29px;
+  text-align: center;
+}
+
+.display{
+  background-color: #CEB1FA;
+  border-radius: 14px;
+  transition-property: all;
+  /* width: 70%; */
+}
+
+
+@media screen and (max-width:1140px){
+
+
+  .btn{
+   font-size: 24px;
+ }
+
+}
+
+@media screen and (max-width:1053px){
+
+
+  .btn{
+   font-size: 20px;
+ }
+
+}
+
+@media screen and (max-width:984px){
+
+  .display{
+    padding: 0px 10px;
+  }
+  .btndiv{
+    width: 66.6%;
+  }
+
+}
+
+@media screen and (max-width:934px){
+
+  .btn{
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+  }
+  .infoTech{
+    font-size: 13px;
+  }
+
+}
+
+@media screen and (max-width:698px){
+
+  .btn{
+    font-size: 12.5px;
+  }
+  .infoTech{
+    font-size: 10px;
+  }
+
+}
+
+@media screen and (max-width:639px){
+
+  .btn{
+    font-size: 29px;
+  }
+  .infoTech{
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (max-width:430px){
+
+  .btn{
+    font-size: 24px;
+  }
+  .infoTech{
+    font-size: 13px;
+  }
+
+}
+
+@media screen and (max-width:355px){
+
+  .btn{
+    font-size: 20px;
+  }
+  .infoTech{
+    font-size: 10px;
+  }
+
+}
+
