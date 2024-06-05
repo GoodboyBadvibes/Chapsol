@@ -37,7 +37,7 @@ export default function Home() {
             <Button text={"Book a call"} />
           </div>
 
-          <div className={style.headerImage+ " lg:w-1/2"} data-aos="fade-up-left" data-aos-duration="1000">
+          <div className={style.headerImage+ " lg:w-1/2"} data-aos="fade-up" data-aos-duration="1000">
             <Image alt="" src={"/Image1.png"} width={666.5} height={717.44} />
           </div>
          </div>

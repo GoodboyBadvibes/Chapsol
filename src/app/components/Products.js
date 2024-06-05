@@ -61,7 +61,7 @@ const Products = () => {
 
         </div>
 
-        <div className=' ' data-aos="zoom-out-up" data-aos-delay="100" data-aos-duration="1000">
+        <div className=' ' data-aos="zoom-out" data-aos-delay="100" data-aos-duration="1000">
           <div className={' items-center align-middle m-auto px-32 py-14 '+style.display} style={{alignContent:"center"}}>
             <Image className=' m-auto' src={"/product1.png"} width={512.59} height={289.22} />
             <p className={style.infoTech}>{productDetail.substring(0,78)+(productDetail.length>78?'...':'')}</p>
