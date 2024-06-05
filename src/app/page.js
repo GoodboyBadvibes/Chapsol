@@ -26,7 +26,7 @@ export default function Home() {
           </div>
 
           <div className={style.headerImage+ " lg:w-1/2"}>
-            <Image alt="" src={"/image1.png"} width={666.5} height={717.44} />
+            <Image alt="" src={"/Image1.png"} width={666.5} height={717.44} />
           </div>
          </div>
 
