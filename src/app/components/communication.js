@@ -1,9 +1,23 @@
-import React from 'react'
+'use client'
+
+import React, { useEffect } from 'react'
 import style from '../Styles/communication.module.css'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const communication = () => {
 
+  useEffect(() => {
 
+    AOS.init(
+      {
+        duration:3000,
+        delay:100
+      }
+    )
+
+}, [])
 
 
   return (
@@ -56,7 +70,7 @@ const communication = () => {
 
         <div className={style.comm}>
 
-          <div className={style.commCard} style={{backgroundColor:'hsla(210, 3%, 75%, 0.221)',opacity:''}}>
+          <div className={style.commCard} style={{backgroundColor:'hsla(210, 3%, 75%, 0.221)',opacity:''}}  data-aos="fade-down-left" data-aos-delay="100" data-aos-duration="750" >
             <div className={' flex items-center justify-center w-fit rounded-full '+ style.icon}>
               <i className={'ri-message-line '}></i>
             </div>    
@@ -65,7 +79,7 @@ const communication = () => {
             <h2 className={' pt-10 '+style.commContent} style={{fontWeight:'400'}}>info@squord.com</h2>
           </div>
 
-          <div className={style.commCard} style={{backgroundColor:'hsla(210, 3%, 75%, 0.221)',opacity:''}}>
+          <div className={style.commCard} style={{backgroundColor:'hsla(210, 3%, 75%, 0.221)',opacity:''}}  data-aos="fade-down-left" data-aos-delay="150" data-aos-duration="750">
             <div className={' flex items-center justify-center w-fit rounded-full '+ style.icon}>
               <i className={'ri-phone-line '}></i>
             </div>    

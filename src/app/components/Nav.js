@@ -9,11 +9,14 @@ import { usePathname } from "next/navigation";
 import NavMenu from './NavMenu'
 import Link from 'next/link'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
 const Nav = () => {
 
   const handleScroll = (e,id)=>{
     e.preventDefault();
-    document.getElementById(id).scrollIntoView({behavior: 'smooth'})
+    document.getElementById(id).scrollIntoView({behavior: 'smooth', margin:'100px'})
   }
 
 
@@ -24,6 +27,16 @@ const Nav = () => {
 
 let currentSection = 'home'
 useEffect(() => {
+
+   
+  AOS.init(
+    {
+      duration:3000,
+      delay:100
+    }
+  )
+  
+
 
   const navLinks = document.querySelectorAll('.navLink')
   const sections = document.querySelectorAll('.section')
@@ -78,10 +91,10 @@ useEffect(() => {
 
        <div className={' sm:flex justify-between hidden '+style.links} style={{justifyContent:'space-between', justifyItems:'space-between'}}>
         <div className={' flex justify-between items-center '+style.mlinks} >
-          <Link  className={" navLink "+(pathname==="/"?"text-standard active":null)} href={"#home"}  > <h1> Home </h1></Link>
-          <Link  className={" navLink "+(pathname==="/#about"?"text-standard":null)} href={"#about"}  onClick={(e)=> handleScroll(e, 'about')}> <h1> About us </h1></Link>
-          <Link  className={" navLink "+(pathname==="/#products"?"text-standard":null)}  href={"#products"} onClick={(e)=> handleScroll(e, 'products')}> <h1> Products </h1></Link>
-          <Link  className={" navLink "+(pathname==="/#reviews"?"text-standard":null)} href={"#testimonials"}  onClick={(e)=> handleScroll(e, 'testimonials')}> <h1> Reviews </h1></Link>
+          <Link  className={" navLink "+(pathname==="/"?"text-standard active":null)} href={"#home"} data-aos="fade-down" data-aos-delay="100" data-aos-duration="750" > <h1> Home </h1></Link>
+          <Link  className={" navLink "+(pathname==="/#about"?"text-standard":null)} href={"#about"} data-aos="fade-down" data-aos-delay="150" data-aos-duration="750" onClick={(e)=> handleScroll(e, 'about')}> <h1> About us </h1></Link>
+          <Link  className={" navLink "+(pathname==="/#products"?"text-standard":null)}  href={"#products"} data-aos="fade-down" data-aos-delay="200" data-aos-duration="750" onClick={(e)=> handleScroll(e, 'products')}> <h1> Products </h1></Link>
+          <Link  className={" navLink "+(pathname==="/#reviews"?"text-standard":null)} href={"#testimonials"} data-aos="fade-down" data-aos-delay="250" data-aos-duration="750"  onClick={(e)=> handleScroll(e, 'testimonials')}> <h1> Reviews </h1></Link>
         </div>
 
         <Button text={"contact"} fxn={(e)=> handleScroll(e, 'contact')}/>
