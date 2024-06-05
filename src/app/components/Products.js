@@ -47,15 +47,15 @@ const Products = () => {
 
         <div className={' gap-0 sm:w-1/2 mx-auto pb-16 '+ style.btnDiv}>
 
-          <div className={style.btn +' '+(product==='OVS'?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000" onClick={()=>{setProduct("OVS");changeProduct()}}>
+          <div className={style.btn +' '+(product==='OVS'?style.btnClick:style.btnUnclick)} data-aos="" data-aos-delay="100" data-aos-duration="1000" onClick={()=>{setProduct("OVS");changeProduct()}}>
              <h1>OVS Studio</h1>
           </div>
 
-          <div className={style.btn +' '+(product==='campaign'?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="150" data-aos-duration="1000" onClick={()=>{setProduct("campaign");changeProduct()}}>
+          <div className={style.btn +' '+(product==='campaign'?style.btnClick:style.btnUnclick)} data-aos="" data-aos-delay="150" data-aos-duration="1000" onClick={()=>{setProduct("campaign");changeProduct()}}>
              <h1>Campaign</h1>
           </div>
 
-          <div className={style.btn  +' '+(product==='community'?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" onClick={()=>{setProduct("community");changeProduct()}}>
+          <div className={style.btn  +' '+(product==='community'?style.btnClick:style.btnUnclick)} data-aos="" data-aos-delay="200" data-aos-duration="1000" onClick={()=>{setProduct("community");changeProduct()}}>
              <h1>Community Website</h1>
           </div>
 
