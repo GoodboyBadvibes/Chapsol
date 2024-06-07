@@ -42,10 +42,11 @@
   /* width: 1000px; */
   overflow-x: auto;
   gap: 25px;
-  /* margin-left: -50.0px !important; */
+  margin-left: -50.0px !important;
   margin: auto;
   flex-direction: row-reverse;
   scroll-snap-type: x mandatory;
+  /* margin-right: -11rem !important; */
 }
 .testScroll::-webkit-scrollbar{
   display: none;

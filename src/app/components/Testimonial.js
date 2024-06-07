@@ -36,7 +36,7 @@ const Testimonial = () => {
     <>
       <div className=' my-14 sm:my-48' id='testimonials section'>
         <div className=' flex-col-reverse sm:flex-row gap-20 flex justify-between items-center'>
-          <div className={' flex items-center justify-between overflow-x-scroll w-full sm:w-2/3 -mr-44 ' +style.testScroll}>
+          <div className={' flex items-center justify-between overflow-x-scroll w-full sm:w-2/3 ' +style.testScroll}>
            {
             testimonials.map((index)=>(
               <div key={index} className={style.commentBox + ' bg-standard'}>

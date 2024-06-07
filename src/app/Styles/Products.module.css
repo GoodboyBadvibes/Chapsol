@@ -63,7 +63,7 @@
 @media screen and (max-width:984px){
 
   .display{
-    padding: 0px 10px;
+    padding: 0px 10px !important;
   }
   .btndiv{
     width: 66.6%;
