@@ -24,7 +24,7 @@ const communication = () => {
     <>
     <div className=" py-14 sm:py-28  sm:px-10  md:px-20 ">
 
-      <div className='  sm:flex items-center justify-between gap-11  sm:mt-80 '>
+      <div className='  sm:flex items-center justify-between gap-11  sm:mt-40 '>
 
         <div className={' w-fit '+style.mess } style={{backgroundColor:'#FCFCFC'}}>
          

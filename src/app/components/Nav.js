@@ -77,7 +77,7 @@ useEffect(() => {
     
     <>
 
-    <div className={' flex justify-between items-center px-5 py-3 sm:px-10 sm:py-6 md:px-20 md:py-12 fixed mb-96 '+(menu?' ':style.nav)} style={{width:'100%', backgroundColor:menu?'white':''}}>
+    <div className={' flex justify-between items-center px-5 py-3 sm:px-10 sm:py-6 md:px-20 md:py-12 fixed mb-96 '+(menu?' ':style.nav)} style={{width:'100%', backgroundColor:menu?'white':'', zIndex:'99'}}>
 
       
 

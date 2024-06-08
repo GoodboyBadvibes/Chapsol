@@ -51,7 +51,7 @@ useEffect(() => {
  
   return (
     <>
-      <div className={'  ' + style.menu+' '+(status?'':'hidden')} style={{}}>
+      <div className={'  ' + style.menu+' '+(status?' ':' hidden ')} style={{}}>
       <div>
         <div  className=" mt-36 text-center items-center">
             <Link className={" navMenuLink "+(pathname==="/"?" text-standard activeLink ":null)} href={"#home"} onClick={(e)=> handleScroll(e, 'home')} passHref> <h1 className={" "+style.menuText}>Home</h1>  </Link>
