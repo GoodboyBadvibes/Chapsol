@@ -33,8 +33,14 @@ const Products = () => {
       setProductDetail("OVS (online Vendor Stall) is an online service to business in the ecommerce niche offering free")
     } else if(product==='campaign'){
       setProductDetail("Campaign is an online service to business in the ecommerce niche offering free")
-    }else{
+    }else if(product==='community'){
       setProductDetail("Community website is an online service to business in the ecommerce niche offering free")
+    }else if(product==='tourism'){
+      setProductDetail("Our Virtual Tourism is an online service to business in the ecommerce niche offering free")
+    }else if(product==='voting'){
+      setProductDetail("Our E-Voting Platform is an online service to business in the ecommerce niche offering free")
+    }else {
+      setProductDetail("Our Contact Call Center operation is an online service to business in the ecommerce niche offering free")
     }
    };
    
@@ -43,7 +49,7 @@ const Products = () => {
     <div className="px-5 sm:px-10  md:px-20 z-0 " id='products'>
 
       
-      <div className={" sm:flex justify-between gap-20 sm:p-11 transition-all duration-1000"}>
+      <div className={" sm:flex justify-between items-center gap-20 sm:p-11 transition-all duration-1000 overflow-hidden"}>
 
         <div className={' gap-0 sm:w-1/2 mx-auto pb-16 '+ style.btnDiv}>
 
@@ -51,12 +57,23 @@ const Products = () => {
              <h1>OVS Studio</h1>
           </div>
 
-          <div className={style.btn +' '+(product==='campaign'?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="150" data-aos-duration="1000" onClick={()=>{setProduct("campaign");changeProduct()}}>
+          <div className={style.btn +' '+(product==='campaign'?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="125" data-aos-duration="1000" onClick={()=>{setProduct("campaign");changeProduct()}}>
              <h1>Campaign</h1>
           </div>
 
-          <div className={style.btn  +' '+(product==='community'?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" onClick={()=>{setProduct("community");changeProduct()}}>
+          <div className={style.btn  +' '+(product==='community'?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="150" data-aos-duration="1000" onClick={()=>{setProduct("community");changeProduct()}}>
              <h1>Community Website</h1>
+          </div>
+          <div className={style.btn +' '+(product==='tourism'?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="175" data-aos-duration="1000" onClick={()=>{setProduct("tourism");changeProduct()}}>
+             <h1>Virtual Tourism</h1>
+          </div>
+
+          <div className={style.btn +' '+(product==='voting'?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" onClick={()=>{setProduct("voting");changeProduct()}}>
+             <h1>E-Voting</h1>
+          </div>
+
+          <div className={style.btn  +' '+(product==='call'?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="225" data-aos-duration="1000" onClick={()=>{setProduct("call");changeProduct()}}>
+             <h1>Call Center</h1>
           </div>
 
         </div>

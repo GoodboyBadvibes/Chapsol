@@ -4,6 +4,11 @@ import Image from 'next/image'
 
 const Testimonial = () => {
 
+  const scrollTest = ()=>{
+    document.querySelector("#testScroll").scrollTo({left:-100})
+    console.log(document.querySelector("#testScroll").offsetLeft)
+    console.log(document.querySelector("#testScroll").scrollLeft)
+  }
 
   const testimonials = [
     {
@@ -36,7 +41,7 @@ const Testimonial = () => {
     <>
       <div className=' my-14 sm:my-48' id='testimonials section'>
         <div className=' flex-col-reverse sm:flex-row gap-20 flex justify-between items-center'>
-          <div className={' flex items-center justify-between overflow-x-scroll w-full sm:w-2/3 ' +style.testScroll}>
+          <div className={' flex items-center justify-between overflow-x-scroll w-full sm:w-2/3 ' +style.testScroll} id='testScroll'>
            {
             testimonials.map((index)=>(
               <div key={index} className={style.commentBox + ' bg-standard'}>
@@ -59,8 +64,8 @@ const Testimonial = () => {
              <h1 className={style.subHeader +' sm:text-start text-center'}>What Citizens say about us</h1>
              <h1 className={style.content}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
              <div className='  sm:text-start text-center' >
-              <i className={'ri-arrow-left-wide-fill ' + style.arrow}></i>
-              <i className={'ri-arrow-right-wide-fill ' + style.arrow}></i>
+              <i className={'ri-arrow-left-wide-fill cursor-pointer ' + style.arrow} onClick={()=>{ scrollTest()}} ></i>
+              <i className={'ri-arrow-right-wide-fill cursor-pointer ' + style.arrow}></i>
              </div>
           </div>
 

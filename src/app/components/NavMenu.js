@@ -22,21 +22,18 @@ useEffect(() => {
   const navLinks = document.querySelectorAll('.navMenuLink')
   const sections = document.querySelectorAll('.section')
   
-  console.log(navLinks)
-  console.log(sections)
+ 
 
   window.addEventListener('scroll', ()=>{
     sections.forEach( section=>{
       if (window.scrollY >=(section.offsetTop - section.clientHeight)-10) {
-        console.log(currentSection)
-  console.log(section.id)
+       
         setCurrentSection(section.id)
       }
     })
   navLinks.forEach(navLink => {
    if (navLink.href.includes(currentSection)){
-    console.log(currentSection)
-    console.log(document.querySelector('.text-standard.activeLink'))
+    
     document.querySelector('.text-standard.activeLink').classList.remove('text-standard')
     navLink.classList.add('text-standard')
     navLink.classList.add('activeLink')

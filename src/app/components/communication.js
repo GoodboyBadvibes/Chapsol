@@ -33,7 +33,12 @@ const communication = () => {
 
           <form action="" className={style.form}>
 
-              <input className={' ' +style.input} type="text" placeholder='Build a solution or Have a Question?' />
+              {/* <input className={' ' +style.input} type="select" placeholder='Build a solution or Have a Question?' /> */}
+              <select className={' ' +style.input} name="title" id="title">
+                <option className={' ' +style.input} value="Build">Build a solution</option>
+                <option className={' ' +style.input} value="Question">Have a Question</option>
+
+              </select>
 
               <div className={'sm:flex items-center justify-start gap-8'}>
                 <input  className={' ' +style.input} type="text" placeholder='First name' />

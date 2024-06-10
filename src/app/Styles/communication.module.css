@@ -38,9 +38,10 @@
 }
 
 .input:focus{
-  border: none;
+  border: 0.5px solid #945ED1;
   background-color: #e2d9f4;
 }
+
 
 .send{
   text-align: center;
@@ -193,7 +194,7 @@
     font-size: 14px;
   }
   .commContent{
-    font-size: 6px;
+    font-size: 10px;
   }
   .icon{
     font-size: 16.67px;

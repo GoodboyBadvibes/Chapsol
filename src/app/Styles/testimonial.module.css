@@ -42,7 +42,7 @@
   /* width: 1000px; */
   overflow-x: auto;
   gap: 25px;
-  margin-left: -50.0px !important;
+  margin-left: -30.0px !important;
   margin: auto;
   flex-direction: row-reverse;
   scroll-snap-type: x mandatory;
@@ -87,7 +87,7 @@
     font-size: 14px;
   }
   .career{
-    font-size: 5px;
+    font-size: 10px;
   }
 }
 
@@ -116,9 +116,6 @@
   }
   .customer{
     font-size: 10px;
-  }
-  .career{
-    font-size: 5px;
   }
 }
 
@@ -153,9 +150,6 @@
   .customer{
     font-size: 24px;
   }
-  .career{
-    font-size: 10px;
-  }
   .commentBox{
     scroll-snap-align: center;
   }
@@ -187,9 +181,6 @@
   }
   .customer{
     font-size: 14px;
-  }
-  .career{
-    font-size: 5px;
   }
   .commentBox{
     scroll-snap-align: center;
@@ -236,9 +227,6 @@
   }
   .customer{
     font-size: 7px;
-  }
-  .career{
-    font-size: 5px;
   }
   .commentBox{
     scroll-snap-align: center;

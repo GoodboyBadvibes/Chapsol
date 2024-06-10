@@ -20,10 +20,7 @@ const Nav = () => {
   }
 
 
-  // const navLinks = document.querySelectorAll('.navLink')
-  // const sections = document.querySelectorAll('.section')
-  // let currentSection = 'home'
-  // console.log(navLinks)
+  
 
 let currentSection = 'home'
 useEffect(() => {
@@ -41,21 +38,17 @@ useEffect(() => {
   const navLinks = document.querySelectorAll('.navLink')
   const sections = document.querySelectorAll('.section')
   
-  console.log(navLinks)
-  console.log(sections)
 
   window.addEventListener('scroll', ()=>{
     sections.forEach( section=>{
       if (window.scrollY >=(section.offsetTop - section.clientHeight)-10) {
-        console.log(currentSection)
-  console.log(section.id)
+ 
         currentSection = section.id
       }
     })
   navLinks.forEach(navLink => {
    if (navLink.href.includes(currentSection)){
-    console.log(currentSection)
-    console.log(document.querySelector('.text-standard.active'))
+    
     document.querySelector('.text-standard.active').classList.remove('text-standard')
     document.querySelector('.active').classList.remove('active')
     navLink.classList.add('text-standard')

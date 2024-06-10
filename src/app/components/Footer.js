@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
           
  
-        <div className=' text-center'>
+        <div className=' '>
           <Link href={'/'} className=' text-xl sm:text-3xl pb-9' ><h2>Home</h2></Link> <br />
 
           <Link href={'/'} className='text-xl sm:text-3xl pb-9' ><h2>About Us</h2></Link> <br />
@@ -26,7 +26,7 @@ const Footer = () => {
 
         </div>
 
-        <div className=' text-center'>
+        <div className=' '>
           <Link href={'/'} ><h2 className='text-xl sm:text-3xl pb-9'>Get Started</h2></Link> <br />
 
           <Link href={'/'} ><h2 className='text-xl sm:text-3xl pb-9'>F.A.Q s</h2></Link> <br />
