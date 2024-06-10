@@ -4,10 +4,9 @@ import Image from 'next/image'
 
 const Testimonial = () => {
 
-  const scrollTest = ()=>{
-    document.querySelector("#testScroll").scrollTo({left:-100})
-    console.log(document.querySelector("#testScroll").offsetLeft)
-    console.log(document.querySelector("#testScroll").scrollLeft)
+
+  const scrollTest = (direction)=>{
+    document.querySelector("#testScroll").scrollTo({left: direction==='left'?document.querySelector("#testScroll").scrollLeft-400:document.querySelector("#testScroll").scrollLeft+400,behavior:'smooth'})
   }
 
   const testimonials = [
@@ -64,8 +63,8 @@ const Testimonial = () => {
              <h1 className={style.subHeader +' sm:text-start text-center'}>What Citizens say about us</h1>
              <h1 className={style.content}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
              <div className='  sm:text-start text-center' >
-              <i className={'ri-arrow-left-wide-fill cursor-pointer ' + style.arrow} onClick={()=>{ scrollTest()}} ></i>
-              <i className={'ri-arrow-right-wide-fill cursor-pointer ' + style.arrow}></i>
+              <i className={'ri-arrow-left-wide-fill cursor-pointer ' + style.arrow} onClick={()=>{ scrollTest('left')}} ></i>
+              <i className={'ri-arrow-right-wide-fill cursor-pointer ' + style.arrow} onClick={()=>{ scrollTest('right')}}></i>
              </div>
           </div>
 

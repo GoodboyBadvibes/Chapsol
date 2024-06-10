@@ -22,10 +22,17 @@
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  border: 2px solid #9747ff ;
+   border: 2px solid #9747ff ;
   color: #9747ff;
   margin-right: 20px;
 }
+/* .arrowActive{
+ 
+}
+.arrowInactive{
+  border: 2px solid #9747ff ;
+  color: #9747ff;
+} */
 .quotes{
   font-size: 110px;
 }
