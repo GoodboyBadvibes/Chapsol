@@ -12,10 +12,62 @@ import 'aos/dist/aos.css'
 const Products = () => {
 
 
+const products = [
+  {
+    name:'OVS Studio',
+    nick:'OVS',
+    detail:'OVS (online Vendor Stall) is an online service to business in the ecommerce niche offering free',
+    image:'/ovs.png'
+  },
+  {
+    name:'Campaign',
+    nick:'campaign',
+    detail:'Coming soon...',
+    image:'/product1.png'
+  },
+  {
+    name:'Community Website',
+    nick:'community',
+    detail:'Coming soon...',
+    image:'/product1.png'
+  },
+  {
+    name:'Virtual Tourism',
+    nick:'tourism',
+    detail:'Coming soon...',
+    image:'/product1.png'
+  },
+  {
+    name:'E-voting',
+    nick:'voting',
+    detail:'Our E-Voting Platform is an online service to business in the ecommerce niche offering free',
+    image:'/product1.png'
+  },
+  {
+    name:'Call Center',
+    nick:'call',
+    detail:'Coming soon...',
+    image:'/product1.png'
+  },
+]
 
-   const [product, setProduct] = useState("OVS");
+   const [product, setProduct] = useState(products[0].nick);
+   const [selectedProduct, selectProduct] = useState(products[0]);
    const [productDetail, setProductDetail] = useState("");
+  //  const [productImage, setProductImage] = useState("/");
 
+  
+const handleClick=(product)=>{
+  setProduct(product)
+}
+
+const getProduct = ()=>{
+    products.forEach((p)=>{
+        if(p.nick===product){
+          selectProduct(p)
+        }
+    })
+}
     useEffect(() => {
 
       AOS.init(
@@ -26,7 +78,9 @@ const Products = () => {
       )
 
     changeProduct()
-  }, [product])
+    getProduct()
+    console.log(selectedProduct)
+  }, [product, selectedProduct])
 
    const changeProduct = ()=>{
     if(product==='OVS'){
@@ -43,6 +97,7 @@ const Products = () => {
       setProductDetail("Our Contact Call Center operation is an online service to business in the ecommerce niche offering free")
     }
    };
+  //  (profile=>({...profile,phone:e.target.value}))}} /> }
    
   return (
     <>
@@ -53,35 +108,23 @@ const Products = () => {
 
         <div className={' gap-0 sm:w-1/2 mx-auto pb-16 '+ style.btnDiv}>
 
-          <div className={style.btn +' '+(product==='OVS'?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000" onClick={()=>{setProduct("OVS");changeProduct()}}>
-             <h1>OVS Studio</h1>
-          </div>
-
-          <div className={style.btn +' '+(product==='campaign'?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="125" data-aos-duration="1000" onClick={()=>{setProduct("campaign");changeProduct()}}>
-             <h1>Campaign</h1>
-          </div>
-
-          <div className={style.btn  +' '+(product==='community'?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="150" data-aos-duration="1000" onClick={()=>{setProduct("community");changeProduct()}}>
-             <h1>Community Website</h1>
-          </div>
-          <div className={style.btn +' '+(product==='tourism'?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="175" data-aos-duration="1000" onClick={()=>{setProduct("tourism");changeProduct()}}>
-             <h1>Virtual Tourism</h1>
-          </div>
-
-          <div className={style.btn +' '+(product==='voting'?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="200" data-aos-duration="1000" onClick={()=>{setProduct("voting");changeProduct()}}>
-             <h1>E-Voting</h1>
-          </div>
-
-          <div className={style.btn  +' '+(product==='call'?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="225" data-aos-duration="1000" onClick={()=>{setProduct("call");changeProduct()}}>
-             <h1>Call Center</h1>
-          </div>
-
+        {products.map((p,index)=>(
+           <div key={index} className={style.btn +' '+(product===p.nick?style.btnClick:style.btnUnclick)} data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000" onClick={()=>{handleClick(p.nick)}} >
+           <h1>{p.name}</h1>
         </div>
+        ))}
+        </div>
+
+        {/* {products.map((product,index)=>(
+           
+        ))} */}
+
+
 
         <div className=' ' data-aos="zoom-out" data-aos-delay="100" data-aos-duration="1000">
           <div className={' items-center align-middle m-auto px-32 py-14 '+style.display} style={{alignContent:"center"}}>
-            <Image className=' m-auto' src={"/product1.png"} width={512.59} height={289.22} />
-            <p className={style.infoTech}>{productDetail.substring(0,78)+(productDetail.length>78?'...':'')}</p>
+            <Image className=' m-auto' src={selectedProduct.image} width={512.59} height={289.22} />
+            <p className={style.infoTech}>{selectedProduct.detail.substring(0,78)+(selectedProduct.detail.length>78?'...':'')}</p>
             <Button  className={style.extBtn} text={"Learn more"} />
           </div>
 

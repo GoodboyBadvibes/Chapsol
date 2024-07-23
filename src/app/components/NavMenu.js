@@ -10,7 +10,7 @@ const NavMenu = ({status, fxn}) => {
 
   const handleScroll = (e,id)=>{
     e.preventDefault();
-    document.getElementById(id).scrollIntoView({behavior: 'smooth'})
+    document.getElementById(id).scrollIntoView({behavior: 'smooth', block:'end'})
     fxn();
     // setCurrentSection(id)
   }

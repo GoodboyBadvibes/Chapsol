@@ -16,7 +16,7 @@ const Nav = () => {
 
   const handleScroll = (e,id)=>{
     e.preventDefault();
-    document.getElementById(id).scrollIntoView({behavior: 'smooth', margin:'100px'})
+    document.getElementById(id).scrollIntoView({behavior: 'smooth', margin:'100px',block:'end' })
   }
 
 
