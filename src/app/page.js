@@ -68,8 +68,8 @@ export default function Home() {
             <div className={' flex flex-wrap gap-5 justify-around items-center py-6 overflow-hidden'+style.sponsors} style={{backgroundColor:'linear-gradient(to right,rgba(156,91,218,0.8),rgba(156,91,218,0.6))',opacity:"50%"}}>
               <Image src={'/unizik.png'} alt="" width={240} height={43}/>
               <Image src={'/upperlink.png'} alt="" width={240} height={43}/>
-              <Image src={'/upperlink.png'} alt="" width={240} height={43}/>
-              <Image src={'/unizik.png'} alt="" width={240} height={43}/>
+              {/* <Image src={'/upperlink.png'} alt="" width={240} height={43}/>
+              <Image src={'/unizik.png'} alt="" width={240} height={43}/> */}
             </div>
           </div>
 
