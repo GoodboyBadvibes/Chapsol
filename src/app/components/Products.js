@@ -40,7 +40,7 @@ const products = [
   {
     name:'E-voting',
     nick:'voting',
-    detail:'Our E-Voting Platform is an online service to business in the ecommerce niche offering free',
+    detail:'Electronic voting system that guarantees 100% safe and transparent processes within your organisation. It increases participation and efficient decision making in different areas',
     image:'/product1.png'
   },
   {
