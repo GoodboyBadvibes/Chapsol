@@ -81,7 +81,7 @@ const communication = () => {
             </div>    
             <h1 className={style.commHeader}>Chat with sales</h1>
             <p className={style.commContent} style={{fontWeight:'300'}}>Speak to our friendly team</p>
-            <h2 className={' pt-10 '+style.commContent} style={{fontWeight:'400'}}>info@squord.com</h2>
+            <h2 className={' pt-10 '+style.commContent} style={{fontWeight:'400'}}>chapsolnetworks@gmail.com</h2>
           </div>
 
           <div className={style.commCard} style={{backgroundColor:'hsla(210, 3%, 75%, 0.221)',opacity:''}}  data-aos="fade-down" data-aos-delay="150" data-aos-duration="750">
@@ -90,7 +90,7 @@ const communication = () => {
             </div>    
             <h1 className={style.commHeader}>Call us</h1>
             <p className={style.commContent} style={{fontWeight:'300'}}>Mon-Fri from 8am to 5pm </p>
-            <h2 className={' pt-10 '+style.commContent} style={{fontWeight:'400'}}>(512) 650 9185</h2>
+            <h2 className={' pt-10 '+style.commContent} style={{fontWeight:'400'}}>+2348131594749</h2>
           </div>
         </div>
 
