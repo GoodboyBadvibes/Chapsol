@@ -61,7 +61,7 @@ const Testimonial = () => {
           <div className=' sm:w-1/3 gap-6 flex-col flex text-center sm:text-start px-5 sm:pr-10  md:pr-20 '>
              <h1 className={style.header + ' text-standard sm:text-start text-center'}> Testimonials</h1>
              <h1 className={style.subHeader +' sm:text-start text-center'}>What Citizens say about us</h1>
-             <h1 className={style.content}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
+             <h1 className={style.content}>We pride ourselves on delivering exceptional software solutions and services that empower businesses across various industries. But dont just take our words for it - hear directly from our satisfied clients. Here are a few testimonials from individuals who have experienced firsthand the transformative impact of our offerings. </h1>
              <div className='  sm:text-start text-center' >
               <i className={'ri-arrow-left-wide-fill cursor-pointer ' + style.arrow} onClick={()=>{ scrollTest('left')}} ></i>
               <i className={'ri-arrow-right-wide-fill cursor-pointer ' + style.arrow} onClick={()=>{ scrollTest('right')}}></i>
