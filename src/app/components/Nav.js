@@ -16,7 +16,7 @@ const Nav = () => {
 
   const handleScroll = (e,id)=>{
     e.preventDefault();
-    document.getElementById(id).scrollIntoView({behavior: 'smooth', margin:'100px',block:'end' })
+    document.getElementById(id).scrollIntoView({behavior: 'smooth', margin:'100px',block:'start' })
   }
 
 
@@ -41,7 +41,7 @@ useEffect(() => {
 
   window.addEventListener('scroll', ()=>{
     sections.forEach( section=>{
-      if (window.scrollY >=(section.offsetTop - section.clientHeight)-10) {
+      if (window.scrollY >=(section.offsetTop - section.clientHeight)) {
  
         currentSection = section.id
       }
@@ -70,7 +70,7 @@ useEffect(() => {
     
     <>
 
-    <div className={' flex justify-between items-center px-5 py-3 sm:px-10 sm:py-6 md:px-20 md:py-12 fixed mb-96 '+(menu?' ':style.nav)} style={{width:'100%', backgroundColor:menu?'white':'', zIndex:'99'}}>
+    <div className={' flex justify-between items-center px-5 py-3 sm:px-10 sm:py-6 md:px-20 md:py-12  mb-96 '+(menu?' ':style.nav)} style={{width:'100%', backgroundColor:menu?'white':'' ,maxWidth:'1440px', margin:'auto'}}>
 
       
 
@@ -84,7 +84,7 @@ useEffect(() => {
 
        <div className={' sm:flex justify-between hidden '+style.links} style={{justifyContent:'space-between', justifyItems:'space-between'}}>
         <div className={' flex justify-between items-center '+style.mlinks} >
-          <Link  className={" navLink "+(pathname==="/"?"text-standard active":null)} href={"#home"} data-aos="fade-down" data-aos-delay="100" data-aos-duration="750" > <h1> Home </h1></Link>
+          <Link  className={" navLink "+(pathname==="/"?"text-standard active":null)} href={"#home"} data-aos="fade-down" data-aos-delay="100" data-aos-duration="750" onClick={(e)=> handleScroll(e, 'home')} > <h1> Home </h1></Link>
           <Link  className={" navLink "+(pathname==="/#about"?"text-standard":null)} href={"#about"} data-aos="fade-down" data-aos-delay="150" data-aos-duration="750" onClick={(e)=> handleScroll(e, 'about')}> <h1> About us </h1></Link>
           <Link  className={" navLink "+(pathname==="/#products"?"text-standard":null)}  href={"#products"} data-aos="fade-down" data-aos-delay="200" data-aos-duration="750" onClick={(e)=> handleScroll(e, 'products')}> <h1> Products </h1></Link>
           <Link  className={" navLink "+(pathname==="/#reviews"?"text-standard":null)} href={"#testimonials"} data-aos="fade-down" data-aos-delay="250" data-aos-duration="750"  onClick={(e)=> handleScroll(e, 'testimonials')}> <h1> Reviews </h1></Link>

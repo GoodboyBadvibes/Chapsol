@@ -28,7 +28,8 @@ export default function Home() {
 
   return (
     <>
-    <main className=" section " id="home">
+    <main className=" section " >
+      <div id="home"></div>
       <div className="px-5 py-5 sm:py-28  sm:px-10  md:px-20 ">
         <div className=" sm:flex justify-between items-center ">
           <div className="lg:w-1/2" data-aos="fade-zoom-in">
@@ -43,7 +44,7 @@ export default function Home() {
          </div>
 
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
-          <h1 className={style.header+" pb-5 sm:pb-11 pt-10 section"} id="about" >About Us</h1>
+          <h1 className={style.header+" pb-5 sm:pb-11 pt-10 section"} id="about" style={{scrollMarginTop:'100px'}} >About Us</h1>
           <h1  className={style.content+" pb-11"}> We're a 21st Century information and Communication technology driven firm with unparalleled commitment in the use and deployment of cutting edge technological solutions to ensure the utmost satisfaction and profitability of our clients and stakeholders all over the Globe. Our Specialized Services which includes but not limited to Software Development, Communications and Networking, ICT Integration, Advisory and Consultancy forms the core of our bond and commitment to our client's. Our team of Vibrant and Visionary tech professionals are consistently saddled with the mission of delivering Our Core Objectives and Goals anytime, anywhere. We're committed to ensuring maximum compliance and adherence to global best practices and standards as we deliver and discharge our corporate goals. We believe in healthy social inclusion as well as in the creation of a healthy environment and work atmosphere that enhancesPotentials, Dreams to be fully harnessed and realized. Our unalloyed commitment to our Core Values of Excellence, Loyalty, Innovations is our passport and ticket to Global Relevance as we use technology to improve the Human Experience. </h1>
         </div>
 
@@ -52,7 +53,7 @@ export default function Home() {
           <h1  className={style.content+" pb-11"}> At Chapsol Networks, we pride ourselves on delivering cutting-edge solutions tailored to meet the diverse needs of our clients. Our range of products encompasses innovative solutions designed to enhance connectivity, efficiency, and productivity across various industries.</h1>
          </div>
       </div>
-      <div className=" section " id="products" >
+      <div className=" section " id="products" style={{scrollMarginTop:'25px'}} >
         <Products />
       </div>
 

@@ -79,7 +79,6 @@ const getProduct = ()=>{
 
     changeProduct()
     getProduct()
-    console.log(selectedProduct)
   }, [product, selectedProduct])
 
    const changeProduct = ()=>{
@@ -101,7 +100,7 @@ const getProduct = ()=>{
    
   return (
     <>
-    <div className="px-5 sm:px-10  md:px-20 z-0 " id='products'>
+    <div className="px-5 sm:px-10  md:px-20 z-0 " id='products' style={{scrollMarginTop:'25px'}}>
 
       
       <div className={" sm:flex justify-between items-center gap-20 sm:p-11 transition-all duration-1000 overflow-hidden"}>

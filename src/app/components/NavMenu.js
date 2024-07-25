@@ -10,24 +10,23 @@ const NavMenu = ({status, fxn}) => {
 
   const handleScroll = (e,id)=>{
     e.preventDefault();
-    document.getElementById(id).scrollIntoView({behavior: 'smooth', block:'end'})
+    document.getElementById(id).scrollIntoView({behavior: 'smooth', block:'start'})
     fxn();
     // setCurrentSection(id)
   }
 
 const [currentSection, setCurrentSection] = useState('home')
+
  
 useEffect(() => {
 
-  const navLinks = document.querySelectorAll('.navMenuLink')
-  const sections = document.querySelectorAll('.section')
-  
- 
-
   window.addEventListener('scroll', ()=>{
+    
+    const navLinks = document.querySelectorAll('.navMenuLink')
+  const sections = document.querySelectorAll('.section')
     sections.forEach( section=>{
-      if (window.scrollY >=(section.offsetTop - section.clientHeight)-10) {
-       
+      //  console.log(window.scrollY,section.id, section.offsetTop)
+      if (window.scrollY >=(section.offsetTop-section.clientHeight)-10) {
         setCurrentSection(section.id)
       }
     })

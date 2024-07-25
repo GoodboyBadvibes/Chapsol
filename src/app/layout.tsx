@@ -22,8 +22,11 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={jura.className}>
+      <body className={jura.className} style={{maxWidth:'1440px', margin:'auto',position:'relative'}}>
+        <div className="fixed w-full left-0" style={{zIndex:'999'}}>
           <Nav />
+        </div>
+          
 
         <div className=" pt-24">
           {children}
