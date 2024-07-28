@@ -35,9 +35,11 @@
 }
 
 .display{
-  background-color: #CEB1FA;
+  background-color: #ceb1fabd;
   border-radius: 14px;
   transition-property: all;
+  max-width: 718px;
+  max-height: 595px;
   
   /* width: 70%; */
 }
