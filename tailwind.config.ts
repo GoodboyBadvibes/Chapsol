@@ -15,8 +15,8 @@ const config: Config = {
       },
     },
     colors:{
-      'standard':'#9747FF',
-      'standarddark':'#955ED0',
+      'standard':'#8D573D',
+      'standarddark':'#663f2c',
       'backdark':'rgb(36,36,36)'
     }
   },
