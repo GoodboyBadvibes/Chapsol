@@ -34,12 +34,12 @@
 
 .input:hover{
   border: none;
-  background-color: #f1eef7;
+  background-color: #af8b5c1a;
 }
 
 .input:focus{
-  border: 0.5px solid #945ED1;
-  background-color: #e2d9f4;
+  border: 0.5px solid #af8b5c75;
+  background-color: #af8b5c41;
 }
 
 
@@ -60,9 +60,8 @@
 
 .icon{
   font-size: 26.67px;
-  background-color: #CEB1FA;
-  color: #945ED1;
-  padding: 20px 25px;
+  background-color: #af8b5c75;
+  padding: 20px 20px;
   border-radius: 100%;
 }
 .comm{

@@ -6,6 +6,10 @@ import style from '../Styles/communication.module.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
+import message from '../../../public/messageIcon.png'
+import phone from '../../../public/PhoneIcon.png'
+import Image from 'next/image';
+
 const communication = () => {
 
   useEffect(() => {
@@ -77,7 +81,7 @@ const communication = () => {
 
           <div className={style.commCard} style={{backgroundColor:'hsla(210, 3%, 75%, 0.221)',opacity:''}}  data-aos="fade-down" data-aos-delay="100" data-aos-duration="750" >
             <div className={' flex items-center justify-center w-fit rounded-full '+ style.icon}>
-              <i className={'ri-message-line '}></i>
+              <Image src={message} />
             </div>    
             <h1 className={style.commHeader}>Chat with sales</h1>
             <p className={style.commContent} style={{fontWeight:'300'}}>Speak to our friendly team</p>
@@ -86,7 +90,7 @@ const communication = () => {
 
           <div className={style.commCard} style={{backgroundColor:'hsla(210, 3%, 75%, 0.221)',opacity:''}}  data-aos="fade-down" data-aos-delay="150" data-aos-duration="750">
             <div className={' flex items-center justify-center w-fit rounded-full '+ style.icon}>
-              <i className={'ri-phone-line '}></i>
+              <Image src={phone} />
             </div>    
             <h1 className={style.commHeader}>Call us</h1>
             <p className={style.commContent} style={{fontWeight:'300'}}>Mon-Fri from 8am to 5pm </p>
