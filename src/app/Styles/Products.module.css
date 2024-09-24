@@ -15,12 +15,12 @@
   transition-duration: 5000ms;
 }
 .btnUnclick{
-  border: 1px solid #CEB1FA;
-  color: #CEB1FA;
+  border: 1px solid ;
+  color: rgba(175, 139, 92, 0.457) ;
 }
 .btnClick{
-  border: 2px solid #945ED1;
-  color: #945ED1;
+  border: 2px solid ;
+  color: #8D573D ;
 }
 
 .extBtn{
@@ -35,7 +35,7 @@
 }
 
 .display{
-  background-color: #ceb1fabd;
+  background-color: #af8b5c3e;
   border-radius: 14px;
   transition-property: all;
   max-width: 718px;
