@@ -10,6 +10,14 @@
   line-height: 30px;
 }
 
+.introBanner{
+  background-image: linear-gradient(to right,#8d583d87,#8d583d87),url('/introBanner.png'); 
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  backface-visibility: hidden;
+}
+
 /* .headerImage{
   width: 666.5px;
   height: 717.44px;
