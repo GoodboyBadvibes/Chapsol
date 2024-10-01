@@ -38,7 +38,7 @@ const Testimonial = () => {
 
   return (
     <>
-      <div className=' my-14 sm:my-48' id='testimonials section'>
+      <div className=' my-48' id='testimonials section'>
         <div className=' flex-col-reverse sm:flex-row gap-20 flex justify-between items-center'>
           <div className={' flex items-center justify-between overflow-x-scroll w-full sm:w-2/3 ' +style.testScroll} id='testScroll'>
            {
