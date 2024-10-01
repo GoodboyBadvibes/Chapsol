@@ -77,7 +77,7 @@ const communication = () => {
 
 
 
-        <div className={style.comm}>
+        <div className={style.comm+' pt-32 sm:pt-0'}>
 
           <div className={style.commCard} style={{backgroundColor:'hsla(210, 3%, 75%, 0.221)',opacity:''}}  data-aos="fade-down" data-aos-delay="100" data-aos-duration="750" >
             <div className={' flex items-center justify-center w-fit rounded-full '+ style.icon}>
