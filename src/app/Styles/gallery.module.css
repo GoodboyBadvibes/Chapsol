@@ -1,0 +1,6 @@
+.gallScroll::-webkit-scrollbar{
+  display: none;
+}
+.gallScroll{
+  scroll-snap-type: x mandatory;
+}

@@ -8,6 +8,7 @@ import Products from "./components/Products"
 import Testimonial from "./components/Testimonial"
 import Communication from "./components/communication"
 import Footer from "./components/Footer"
+import Gallery from './components/Gallery'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'
@@ -95,6 +96,10 @@ export default function Home() {
 
          <Communication />
          </div>
+
+        <div className=" px-5 sm:px-10 md:px-20     py-36">
+          <Gallery />
+        </div>
          <Footer />
     </main>
         
