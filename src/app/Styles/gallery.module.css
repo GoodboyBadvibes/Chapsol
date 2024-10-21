@@ -4,3 +4,225 @@
 .gallScroll{
   scroll-snap-type: x mandatory;
 }
+
+
+
+.header{
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 37.2px;
+}
+
+.subHeader{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.59px;
+}
+
+.content{
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.arrow{
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+   border: 2px solid ;
+  margin-right: 20px;
+}
+
+@media screen and (min-width:640px){
+  .image{
+    width: 60%;
+  }
+  .gallScroll{
+    width:600px
+  }
+  .gallText{
+    width: 50%;
+  }
+}
+@media screen and (max-width:1177px){
+  .header{
+    font-size: 26px;
+    line-height: 10px;
+  }
+  
+  .subHeader{
+    font-size: 31px;
+    line-height: 5px;
+  }
+  
+  .content{
+    font-size: 5px;
+    /* line-height: 0; */
+  }
+  .arrow{
+    line-height: 0;
+  }
+}
+@media screen and (max-width:1112px){
+  .header{
+    font-size: 21px;
+  }
+  
+  .subHeader{
+    font-size: 26px;
+  }
+  
+  .content{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width:1060px){
+  .gallScroll{
+    width:500px
+  }
+}
+@media screen and (max-width:985px){
+  .gallScroll{
+    width:450px
+  }
+  .arrow{
+    font-size: 25px;
+  }
+
+  .header{
+    font-size: 16px;
+  }
+  
+  .subHeader{
+    font-size: 21px;
+  }
+  
+  .content{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:870px){
+  .gallScroll{
+    width:400px
+  }
+}
+@media screen and (max-width:844px){
+  .gallScroll{
+    width:350px
+  }
+}
+@media screen and (max-width:694px){
+  .gallScroll{
+    width:300px
+  }
+  .image{
+    width: 40%;
+  }
+  .gallText{
+    width: 45%;
+  }
+}
+@media screen and (max-width:639px){
+  .gallText{
+    padding-bottom: 50px;
+  }
+  .header{
+    font-size: 31px;
+    line-height: 37.2px;
+  }
+  
+  .subHeader{
+    font-size: 36px;
+    line-height: 42.59px;
+  }
+  
+  .content{
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .arrow{
+    font-size: 35px;
+    line-height: 30px;
+  }
+  .image{
+    width: 100%;
+  }
+  .gallScroll{
+    width:100%
+  }
+  .gallText{
+    width: 100%;
+  }
+}
+@media screen and (max-width:450px){
+  .header{
+    font-size: 26px;
+  }
+  
+  .subHeader{
+    font-size: 31px;
+  }
+  
+  .content{
+    font-size: 20px;
+  }
+  
+  .arrow{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width:411px){
+  .header{
+    font-size: 21px;
+  }
+  
+  .subHeader{
+    font-size: 26px;
+  }
+  
+  .content{
+    font-size: 15px;
+  }
+  
+  .arrow{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width:348px){
+  .header{
+    font-size: 21px;
+  }
+  
+  .subHeader{
+    font-size: 21px;
+  }
+  
+  .content{
+    font-size: 15px;
+  }
+  
+  .arrow{
+    font-size: 25px;
+  }
+}
+/* @media screen and (max-width:1175px){
+  .image{
+    width: 50%;
+  }
+  .gallText{
+    width: 30%;
+  }
+} */
+/* @media screen and (max-width:1130px){
+  .image{
+    width: 50%;
+  }
+  .gallText{
+    width: 40%;
+  }
+} */
