@@ -58,13 +58,13 @@ const Footer = () => {
           <h3 className='text-xl sm:text-2xl pb-9 '>Socials</h3>
 
          <div className='flex gap-3 justify-center items-center'>
-         <Link href={'/'} ><i className='ri-facebook-fill text-4xl rounded-full p-3 text-standard' style={{backgroundColor:'hsla(210, 3%, 75%, 0.518)'}}></i></Link> 
+         <Link href={'/'} ><i className='ri-facebook-fill rounded-full p-3 text-standard' style={{backgroundColor:'hsla(210, 3%, 75%, 0.518)', fontSize:'20px'}}></i></Link> 
 
-         <Link href={'/'} ><i className='ri-twitter-x-fill text-4xl rounded-full p-3 text-standard' style={{backgroundColor:'hsla(210, 3%, 75%, 0.518)'}}> </i></Link> 
+         <Link href={'/'} ><i className='ri-twitter-x-fill rounded-full p-3 text-standard' style={{backgroundColor:'hsla(210, 3%, 75%, 0.518)', fontSize:'20px'}}> </i></Link> 
 
-         <Link href={'/'} ><i className='ri-youtube-fill text-4xl rounded-full p-3 text-standard' style={{backgroundColor:'hsla(210, 3%, 75%, 0.518)'}}> </i></Link> 
+         <Link href={'/'} ><i className='ri-youtube-fill rounded-full p-3 text-standard' style={{backgroundColor:'hsla(210, 3%, 75%, 0.518)', fontSize:'20px'}}> </i></Link> 
 
-         <Link href={'/'} ><i className='ri-linkedin-fill text-4xl rounded-full p-3 text-standard' style={{backgroundColor:'hsla(210, 3%, 75%, 0.518)'}}> </i></Link> 
+         <Link href={'/'} ><i className='ri-linkedin-fill rounded-full p-3 text-standard' style={{backgroundColor:'hsla(210, 3%, 75%, 0.518)', fontSize:'20px'}}> </i></Link> 
 
          </div>
 
