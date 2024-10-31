@@ -19,7 +19,7 @@
 }
 
 .misandvis{
-  width:50%;
+  width:47.5%;
 }
 
 /* .headerImage{
@@ -34,7 +34,7 @@
 
 }
 
-@media screen and (max-width:1033px){
+/* @media screen and (max-width:1033px){
   .header{
     font-size: 29px;
     font-weight: 700;
@@ -46,8 +46,13 @@
     font-weight: 300;
     line-height: 30px;
   }
-}
+} */
 
+@media screen and (max-width:1290px){
+  .misandvis{
+    /* width:100%; */
+  }
+}
 @media screen and (max-width:639px){
   .header{
     font-size: 49px;
