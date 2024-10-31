@@ -90,7 +90,7 @@ useEffect(() => {
           <Link  className={" navLink "+(pathname==="/#reviews"?"text-standard":null)} href={"#testimonials"} data-aos="fade-down" data-aos-delay="250" data-aos-duration="750"  onClick={(e)=> handleScroll(e, 'testimonials')}> <h1> Reviews </h1></Link>
         </div>
 
-        <Button text={"contact"} fxn={(e)=> handleScroll(e, 'contact')}/>
+        <Button text={"contact"} styl={{color:'white'}} fxn={(e)=> handleScroll(e, 'contact')}/>
        </div>
 
 

@@ -11,7 +11,7 @@ const Footer = () => {
         <div>
           <div style={{ width: '180px' }} className='m-auto pb-20 md:pb-0 md:m-0 '>
             <Image src={'/logo.png'} width={180} height={200} className=' items-center m-auto md:m-0 md:items-start' />
-            <h2 className='text-2xl pt-11 hidden md:block'>Create your Own website and collaborate with the team</h2>
+            <h2 className='pt-11 hidden md:block' style={{fontSize:'10px'}}>Create your Own website and collaborate with the team</h2>
 
           </div>
 
