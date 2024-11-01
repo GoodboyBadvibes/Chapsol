@@ -35,7 +35,7 @@ const gallery =
             <h1 className={style.subHeader + ' sm:text-start text-center pb-10'}>Where and who we've met</h1>
             <h1 className={style.content}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo neque, illum similique necessitatibus blanditiis tenetur voluptates, reprehenderit, modi nesciunt voluptas eligendi nihil saepe eos error eum? Facere eaque quibusdam perspiciatis vitae tempore nihil atque vel.</h1>
           </div>
-          <div className='  sm:text-start text-center mt-12' >
+          <div className='  sm:text-start text-center mt-12 items-start ' >
             <i className={'ri-arrow-left-wide-fill cursor-pointer text-standard border-standard ' + style.arrow} onClick={() => { scrollTest('left') }} ></i>
             <i className={'ri-arrow-right-wide-fill cursor-pointer text-standard border-standard ' + style.arrow} onClick={() => { scrollTest('right') }}></i>
           </div>

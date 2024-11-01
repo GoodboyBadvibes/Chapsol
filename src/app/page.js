@@ -30,7 +30,7 @@ export default function Home() {
     <>
     <main className=" section " > {/**/}
       <div id="home"></div>
-      <div className=" py-5 sm:pt-28 sm:pb-14 "> {/* There existed a general padding here before the product designer brought up some sort of annoying upgarde which resulted in removing general padding and instead giving the standard padding to each component on this page... the padding is a set of tailwind classes : " px-5 sm:px-10 md:px-20 "*/}
+      <div className=" py-5 sm:pt-20 md:pt-24 lg:pt-28 sm:pb-14 "> {/* There existed a general padding here before the product designer brought up some sort of annoying redesign which resulted in removing general padding and instead giving the standard padding to each component on this page... the padding is a set of tailwind classes : " px-5 sm:px-10 md:px-20 "*/}
         <div className={" sm:flex justify-between items-center  px-5 sm:px-10 md:px-20 py-32 "+style.introBanner}>
           <div className={"lg:w-1/2 xl "+ style.bannerText} style={{color:'white'}} data-aos="fade-zoom-in">
             <h1 className={style.header+" pb-11"}>Empower your Business with intuitive software solutions </h1>
@@ -51,13 +51,13 @@ export default function Home() {
         </div>
         <div className={' block sm:flex items-start justify-between px-5 sm:px-10 md:px-20 pb-5 sm:pb-32  pt-24 sm:pt-48 bg-standard'} style={{color: 'white'}}>
           <div className={" "+style.misandvis}>
-            <h1 className={style.header+ ' pb-5 sm:pb-11 section'}>Our Mission</h1>
-            <h1 className={style.content+" pb-24 sm:pb-0"}>
+            <h1 className={style.header+ ' pb-5 sm:pb-11 section '}>Our Mission</h1>
+            <h1 className={style.content+" pb-24 sm:pb-0 "}>
               Our mission is to render a safe and transparent platform for Peer to Peer transactions by safeguarding both buyers and sellers through our systematic cryptocurrency escrow and payment services. We aim to build trust, reduce risks, and facilitate seamless cryptocurrency transactions.
             </h1>
           </div>
           <div className={" "+style.misandvis}>
-            <h1 className={style.header+ ' pb-5 sm:pb-11  section'}>Our Vision</h1>
+            <h1 className={style.header+ ' pb-5 sm:pb-11  section '}>Our Vision</h1>
             <h1 className={style.content+" "}>
               Additionally, we are committed  to informing our users about the best practices, empowering them with the knowledge needed to make informed decisions during their Peer to Peer cryptocurrency transactions.
             </h1>

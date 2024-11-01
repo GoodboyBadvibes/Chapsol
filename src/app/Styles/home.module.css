@@ -1,7 +1,7 @@
 .header{
   font-size: 49px;
   font-weight: 700;
-  line-height: 58.8px;;
+  line-height: 58.8px;
 }
 
 .content{
@@ -52,6 +52,11 @@
   }
 } */
 
+@media screen and (min-width:1024px){
+  .bannerText{
+    width:50%;
+  }
+}
 @media screen and (min-width:1280px){
   .bannerText{
     width:600px;
@@ -63,18 +68,6 @@
   }
 }
 @media screen and (max-width:639px){
-  .header{
-    font-size: 49px;
-    font-weight: 700;
-    line-height: 58.8px;
-  }
-  
-  .content{
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 30px;
-  }
-
   .misandvis{
     width:100%;
   }
