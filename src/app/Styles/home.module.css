@@ -18,6 +18,10 @@
   backface-visibility: hidden;
 }
 
+/* .bannerText{
+
+} */
+
 .misandvis{
   width:47.5%;
 }
@@ -48,6 +52,11 @@
   }
 } */
 
+@media screen and (min-width:1280px){
+  .bannerText{
+    width:600px;
+  }
+}
 @media screen and (max-width:1290px){
   .misandvis{
     /* width:100%; */

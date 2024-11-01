@@ -32,7 +32,7 @@ export default function Home() {
       <div id="home"></div>
       <div className=" py-5 sm:pt-28 sm:pb-14 "> {/* There existed a general padding here before the product designer brought up some sort of annoying upgarde which resulted in removing general padding and instead giving the standard padding to each component on this page... the padding is a set of tailwind classes : " px-5 sm:px-10 md:px-20 "*/}
         <div className={" sm:flex justify-between items-center  px-5 sm:px-10 md:px-20 py-32 "+style.introBanner}>
-          <div className="lg:w-1/2 xl:w-1/3" style={{color:'white'}} data-aos="fade-zoom-in">
+          <div className={"lg:w-1/2 xl "+ style.bannerText} style={{color:'white'}} data-aos="fade-zoom-in">
             <h1 className={style.header+" pb-11"}>Empower your Business with intuitive software solutions </h1>
             <h2 className={style.content+" pb-11"}>Software Development, Communications and Networking, ICT Integration, Advisory and Consultancy </h2>
             <Button text={"Book a call"} styl={{backgroundColor:' white', color:' #8D573D'}} />
